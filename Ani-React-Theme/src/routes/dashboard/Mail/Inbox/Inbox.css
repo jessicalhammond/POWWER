@@ -1,0 +1,348 @@
+.inboxContainerWrap {
+  display: table;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 5px;
+  & .inboxContainer, & .messageListWrapper, & .textWrapper, & .composerContainer {
+    display: table-cell;
+    vertical-align: top;
+  }
+  & .inboxContainer {
+    width: 15%;
+  }
+}
+
+.emailOptions {
+  & .emailOptionsTitle {
+    opacity: 0.92;
+  }
+  & .mainOptions {
+    padding-left: 0;
+    list-style-type: none;
+    & li {
+      font-size: 15px;
+      line-height: 40px;
+      padding-top: 3px;
+    }
+
+    & a {
+      color : #424242;
+      opacity: 0.9;
+      .transition: all .2s linear;
+      &:hover, &:active, &:focus {
+        color: #FFFFFF;
+        text-decoration: none;
+      }
+    }
+
+    & :global(.badge) {
+      margin-top: 9px;
+    }
+  }
+}
+
+.wrapList {
+  list-style-type: none;
+  position: relative;
+  & .messagesList {
+    max-height: 400px;
+    overflow: auto;
+    & .messageItem:hover {
+      opacity: 0.9;
+    }
+    & .messagesItem {
+      & :global(.fa) {
+        color: #ccc;
+        font-size: 11px;
+      }
+      & .faStarred {
+        color: #3ca2e0;
+        font-size: 11px;
+      }
+      & .dateClass {
+        font-size: 11px;
+        margin-top: 3px;
+      }
+      & p {
+        font-size: 11.5px;
+        line-height: 14px;
+      }
+      & a:hover {
+        text-decoration: none;
+      }
+    }
+    & .name {
+      font-size: 18px;
+      opacity: 0.7;
+    }
+    & .text {
+      float: right;
+      font-size: 12px;
+      margin-top: -40px;
+      opacity: 0.7;
+    }
+    & .messagesItemSubject {
+      font-size: 13px;
+      font-weight: 600;
+      color: #555;
+    }
+    & .messagesItemContent {
+      & p {
+        width: 240px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-bottom: 0;
+        line-height: 18px;
+      }
+    }
+    & .fa:hover {
+      color: red;
+    }
+    & .leftist {
+      width: 8px;
+      float: left;
+      margin-left: -17px;
+      margin-top: -2px;
+      & .checkbox1 {
+        margin-left: -2px;
+        & span {
+          height: 12px;
+          width: 12px;
+          &::before {
+            font-size: 14px;
+            line-height: 11px;
+            border: solid 1px #ddd;
+          }
+        }
+      }
+    }
+  }
+  & ul {
+    padding-left: 0px;
+  }
+  & a {
+    color: #424242;
+  }
+  & li.activeMessage {
+    & .messagesItemSubject, & .dateClass, & .fa {
+      color: #fff;
+    }
+    background: #3ca2e0;
+    color: #F3F3F3 !important;
+/* ****(*&(*&*(&*(&(*&(*&*(&*(&*(&(*&*(&*&^*^*& please check css))))))))))) ********/
+    .leftist .fa {
+      color: #fff;
+    }
+  }
+  & .messagesSearch {
+    margin-bottom: 20px;
+  }
+  & .messagesItem {
+    padding-top: 10px;
+    border-bottom: 1px solid #C6C6C6;
+    padding-left: 30px;
+    padding-right: 10px;
+    height: 60px;
+  }
+  & .wrapOptions {
+    position: absolute;
+    left: 16px;
+    right: 30px;
+    height: 50px;
+    background-color: #fff;
+    z-index: 1;
+    top:0;
+    & input.formControl {
+      padding-left: 10px;
+    }
+  }
+}
+
+.inboxContainer {
+  border-radius: 5px 0 0 5px;
+  min-width: 170px;
+  background: #4C4C4C;
+  color: #E7E7E7;
+  & .buttContainer {
+    padding: 16px;
+    & .btnBlock {
+      height: 30px;
+      font-size: 13px;
+    }
+    & .btnStyle {
+      border-radius: 50px;
+      border-color: #3ca2e0;
+      background-color: #3ca2e0;
+      &:hover {
+        border-color: #2089c9;
+        background-color: #2089c9;
+      }
+    }
+  }
+
+  & .poor {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    opacity: 0.7;
+    border-top: 1px solid #848484;
+  }
+
+  & ul.mainOptions {
+    & h5 {
+      margin-top: 15px;
+      margin-bottom: 5px;
+      font-size: 13px;
+      font-weight: 600;
+      padding-left: 13px;
+      opacity: 0.5;
+    }
+    & li.activeLi {
+      background-color: #3f3f3f;
+      & :global(.badge) {
+        background: #5cb85c;
+      }
+    }
+    & li {
+      padding-left: 5px;
+      padding-right: 10px;
+      & .faStop {
+        margin-top: 10px;
+      }
+      & .faOrange {
+        color: #FFB457;
+      }
+      & .faYellow {
+        color: #FFFA9B;
+      }
+      & .faCyan {
+        color: #8AEFE6;
+      }
+      & .faPurple {
+        color: #DD8BFF;
+      }
+      & :global(.badge) {
+        background: #de6764;
+      }
+      & a {
+        color: #E7E7E7;
+        font-size: 13px;
+       }
+    }
+  }
+}
+
+.messageListWrapper {
+  width: 300px;
+  background: #E9E9E9;
+  overflow: hidden;
+  position: relative;
+  padding-top: 107px;
+  border-right: solid 1px #ddd;
+  & .searchBox {
+    height: 107px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    & :gloabl(.fa) {
+      font-size: 13px;
+      opacity: 0.7;
+    }
+    & :global(.form-control) {
+      margin-top: 6px;
+    }
+    padding: 15px;
+    text-align: center;
+    font-size: 15px;
+    opacity: 0.8;
+    & .seBox {
+      font-size: 26px;
+    }
+  }
+  & .wrapList {
+    background: #F5F5F5;
+  }
+}
+
+.textWrapper {
+  & .wrapMessage {
+    overflow: hidden;
+    & .messageTopic {
+    padding: 15px;
+    border-bottom: 1px solid #DEDEDE;
+    font-size: 18px;
+    line-height: 20px;
+    color: #565656;
+    & .pullRight {
+      & :global(.fa) {
+        font-size: 14px;
+        padding-left: 16px;
+        color: #B9B9B9;
+      }
+      & a {
+        color: inherit;
+        &:hover {
+          & :gloabl(.fa-trash-o) {
+            color: #de6764;
+          }
+          & :global(.fa-reply) {
+            color: #5cb85c;
+          }
+        }
+      }
+    }
+  }
+  & .messageSender {
+      padding: 5px 15px;
+      border-bottom: 1px solid #DEDEDE;
+      color: #B5B5B5;
+      & :global(.fa-caret-o-down) {
+        font-size: 13px;
+      }
+      & a {
+        font-size: 14px;
+      }
+      & .senderImg {
+          width: 40px;
+          border: 1px solid #ddd;
+      }
+
+    }
+  }
+  & .messageContent {
+    padding: 15px;
+    overflow: auto;
+  }
+  & .messageFooter {
+      height: 70px;
+    padding-top: 10px;
+    padding-right: 15px;
+    & .btnStyle {
+      font-size: 13px;
+      height: 30px;
+      width: 100px;
+    }
+  }
+}
+
+@media (max-width: 1120px) {
+  .textWrapper {
+    display: none !important;
+  }
+  .inboxContainer {
+    width: 30%;
+  }
+  .messageListWrapper {
+    width: 70%;
+  }
+}
+@media (max-width: 550px) {
+  .messageListWrapper {
+    display: none;
+  }
+  .inboxContainer {
+    width: 100%;
+  }
+}

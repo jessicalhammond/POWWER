@@ -1,0 +1,39 @@
+.text {
+  font-size: 30px;
+}
+
+.invoice {
+  & :global(.btn) {
+    margin-right: 5px;
+    border-radius: 30px;
+  }
+  & :global(.btn-primary) {
+    background: #3ca2e0;
+    color: #FFF;;
+    border-color: #3ca2e0;
+  }
+
+  & :global(.btn-bordered) {
+    background: #fff;
+    border-width: 2px;
+    border-color: #3ca2e0;
+  }
+
+  & :global(.btn-bordered.btn-primary) {
+    border-color: #3ca2e0;
+    color: #3ca2e0;
+  }
+
+  & :global(.btn-bordered.btn-hover:hover) {
+      background: #3ca2e0;
+      color: #fff;
+  }
+  & :global(.btn-bordered.btn-o:hover) {
+      background: #2089c9;
+      color: #fff;
+  }
+
+  & :global(.btn-rounded) {
+      border-radius: 50px;
+  }
+}

@@ -1,0 +1,172 @@
+@import '../variables.css';
+
+.sideWidgets {
+  margin-left: 45px;
+  color: color(var(--brand-black) a(80%));
+  float: left;
+  border-top: 1px solid color(var(--brand-primary) blackness(6%));
+  width: calc(var(--nav-width ) - 45px);
+  position: absolute;
+  left: 0;
+  & .widgetHeader {
+    text-align: center;
+    padding: 15px;
+    height: 50px;
+    color: color(var(--brand-black) a(80%));
+    font-size: 15px;
+    font-weight: 600;
+    & a {
+      color: inherit;
+      &:hover, &:focus {
+        color: color(var(--brand-black) a(100%));
+        text-decoration: none;
+      }
+    }
+  }
+  & .widgetsContent {
+    padding: 12px;
+    overflow: hidden;
+    & .avatarName {
+      padding-top: 12px;
+    }
+    & .userAvatar {
+      width: 125px;
+      height: 125px;
+    }
+    & .calendarContainer {
+      margin-top: 10px;
+    }
+    & .newsFeed {
+      & .feedHeader {
+        text-transform: uppercase;
+        margin-left: -12px;
+        margin-right: -12px;
+        height: 27px;
+        padding-top: 6px;
+        padding-left: 12px;
+        font-size: 10px;
+        margin-top: 10px;
+        background: color(var(--brand-primary) blackness(10%));
+      }
+      & .feedContent {
+        margin-top: 4px;
+        & ul {
+          list-style-type: none;
+          padding: 0;
+          & li {
+            height: 40px;
+            padding-top: 4px;
+            font-size: 10.5px;
+            & .feedDate {
+              float: right;
+              font-size: 9px;
+              padding-right: 5px;
+              color: $eee;
+            }
+           & a {
+              color: inherit;
+              text-decoration: none;
+              &:hover, &:focus {
+                color: color(var(--brand-black));
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.calContainer {
+  margin-top: 10px;
+  & .calHeader {
+    text-transform: uppercase;
+    margin-left: -12px;
+    margin-right: -12px;
+    height: 27px;
+    padding-top: 6px;
+    padding-left: 12px;
+    font-size: 10px;
+    margin-top: 10px;
+    background: color(var(--brand-primary) blackness(10%));
+  }
+  & :global(.rc-calendar) {
+    width: 172px;
+    background-color: var(--brand-primary);
+    color: white;
+    font-size: 10px;
+    border-radius: 0px;
+    box-shadow: none;
+    & :global(.rc-calendar-full-header) {
+      border-bottom: none;
+      & :global(.rc-calendar-full-header-switcher) {
+        display: none;
+      }
+      & :global(.rc-select-selection--single) {
+        background-color: transparent;
+        border-color: transparent;
+        color: white;
+        border-radius: 0;
+        & :global(.rc-select-arrow b) {
+          border-color: white transparent transparent transparent;
+        }
+      }
+    }
+    & :global(.rc-calendar-calendar-body) {
+      & :global(.rc-calendar-column-header) {
+        width: 20px;
+        padding: 0px;
+      }
+      & :global(.rc-calendar-last-month-cell), & :global(.rc-calendar-next-month-btn-day) {
+        & :global(.rc-calendar-date) {
+          color: #bbb;
+        }
+      }
+
+      & :global(.rc-calendar-date) {
+        display: block;
+        margin: 0 auto;
+        border-radius: 0;
+        width: 20px;
+        height: 20px;
+        color: white;
+        padding: 0;
+        background: transparent;
+        line-height: 26px;
+        text-align: center;
+        &:hover {
+          background: color(var(--brand-primary) blackness(20%));
+          color: white;
+          cursor: pointer;
+        }
+      }
+      & :global(.rc-calendar-selected-day .rc-calendar-date) {
+        background: #2089c9;
+        border: none;
+      }
+    }
+  }
+}
+
+:global(.rc-select-dropdown) {
+box-shadow: none;
+border-radius: 0;
+& :global(.rc-select-dropdown-menu li.rc-select-dropdown-menu-item-active) {
+  background: #3CA2E0;
+  }
+}
+
+:global(.rtl) {
+  & .sideWidgets {
+    margin-left: 0 !important;
+  }
+  #sidebar div.side-menu .menu-body ul.sidenav li ul.nested-dropdown {
+    left: 0;
+    right: 45px;
+  }
+}
+
+/*.userAvatar {
+  width: 125px;
+  height: 125px;
+}*/

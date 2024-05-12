@@ -1,0 +1,96 @@
+@import '../../variables.css';
+.sideMenu {
+  width: 45px;
+  background: color(var(--brand-primary) blackness(20%));
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 999;
+  float: left;
+  & .menuBody {
+    width: 45px;
+    border-top: 1px solid color(var(--brand-primary) blackness(6%));
+    & .sidenav {
+      list-style-type: none;
+      padding: 0;
+      & li {
+        position: relative;
+        margin-top: 0;
+        & a {
+          color: color(var(--brand-black) a(80%));
+          border-radius: 0;
+          transition: all .12s linear;
+          & :global(span.glyphicon) {
+            line-height: 1.4;
+          }
+          &:hover {
+            color: #fff;
+          }
+        }
+        & a:hover{
+          background: var(--brand-primary);
+          color: #fff;
+        }
+        & .nestedDropdown {
+          display: none;
+          list-style: none;
+          position: absolute;
+          top: 0;
+          left: 45px;
+          background: white;
+          padding-left: 0px;
+          width: 190px;
+          min-height: 40px;
+          padding-top: 3px;
+          & li {
+            min-height: 24px;
+            color: color(var(--brand-primary) blackness(5%));
+            & a {
+              display: block;
+              color: var(--brand-primary);
+              padding: 8px;
+              height: auto;
+              &:hover, &:focus, &:active{
+                color: color(var(--brand-primary) blackness(5%));
+                background: #f8f8f8;
+                text-decoration: none;
+              }
+            }
+          }
+          & .sideMenuHeader {
+            text-transform: uppercase;
+            min-height: 38px;
+            padding-top: 8px;
+            padding-left: 8px;
+            border-bottom: 1px solid #eee;
+            font-size: 12px;
+            font-weight: bold;
+            line-height: 21px;
+            color: color(var(--brand-primary) blackness(5%));
+            & a {
+              color: color(var(--brand-primary) blackness(5%));
+            }
+          }
+        }
+        &:hover {
+          & .nestedDropdown {
+            display: block;
+          }
+        }
+      }
+      /*& :global(li.active) {
+        & a{
+          background: var(--brand-primary);
+        }
+      }*/
+
+    }
+  }
+}
+:global(.rtl) {
+  & li:hover .nestedDropdown {
+    left: 0;
+    right: 45px;
+    background: red;
+  }
+}

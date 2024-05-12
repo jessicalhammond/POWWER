@@ -1,0 +1,105 @@
+.todoContainer {
+  position: relative;
+  height: 350px;
+
+  & .panelHeading {
+    padding: 0px;
+    background-color: #db5b57;
+    border-color: #da524f;
+    border-radius: 0;
+  }
+  & .todoHeader {
+    position: relative;
+    padding: 15px;
+    & h4 {
+      color: #FFFFFF;
+      font-weight: 600;
+      font-size: 18px;
+      margin: 0;
+      & .fa {
+        font-size: 24px;
+        position: relative;
+        top: 3px;
+        right: 2px;
+      }
+    }
+  }
+
+  & .panelBody {
+    color: #fff;
+    background-color: #de6764;
+    border-color: #da524f;
+    & .todoListWrap {
+      height: 215px;
+      overflow: auto;
+      /*overflow: hidden;*/
+      position: relative;
+      margin-bottom: 15px;
+      & .todoListItem {
+        color: white;
+        padding: 0;
+        margin: 0;
+        & li {
+          padding-top: 8px;
+          padding-bottom: 8px;
+          font-size: 15px;
+          & .checkboxWrap input:checked + span:before  {
+            background: inherit;
+            border-color: inherit;
+            content: "\2713";
+          }
+          & .checkboxWrap {
+            padding-right: 7px;
+            & .checkboxStyle {
+              position: absolute;
+              height: inherit;
+              width: inherit;
+              opacity: 0;
+              left: 0;
+            }
+            & span {
+              cursor: pointer;
+              position: relative;
+              margin-right: 5px;
+              display: inline-block;
+              height: 20px;
+              width: 20px;
+              vertical-align: middle;
+            }
+            & span::before {
+              position: absolute;
+              top: 0;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              content: " ";
+              color: #fff;
+              text-align: center;
+              font-size: 22px;
+              border: solid 2px #ddd;
+              line-height: 16px;
+            }
+          }
+          & .doneTrue {
+            text-decoration: line-through;
+          }
+          & .doneFalse {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+    & .todoFormBottom {
+      & .formControl {
+        border-color: white;
+        border-radius: 0;
+      }
+      & .btn {
+        border-radius: 0;
+        background: inherit;
+        color: white;
+        border-color: white;
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+@import '../variables.css';
+
+
+.sidebar {
+  width: var(--nav-width);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background: var(--brand-primary);
+  transition: all 0.2s ease-in-out;
+  & .sidenavOuter {
+    position: absolute;
+    top:50px;
+    bottom:0;
+    left:0;
+    right: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+}
+@media screen and (max-width:768px) {
+  .sidebar {
+    left: -235px;
+  }
+  :global(.push-right) {
+    & .sidebar {
+      left: 0;  
+    }
+  }
+}

@@ -1,0 +1,109 @@
+.grid{
+  & :global(.row) {
+    margin-right: -5px;
+    margin-left: -5px;
+    & :global(.col-sm-6) {
+      padding-right: 5px !important;
+      padding-left: 5px !important;
+    }
+    & :global(.col-sm-5) {
+      padding-right: 5px !important;
+      padding-left: 5px !important;
+    }
+    & :global(.col-sm-4) {
+      padding-right: 5px !important;
+      padding-left: 5px !important;
+    }
+    & :global(.col-sm-3) {
+      padding-right: 5px !important;
+      padding-left: 5px !important;
+    }
+    & :global(.col-sm-2) {
+      padding-right: 5px !important;
+      padding-left: 5px !important;
+    }
+    & :global(.col-sm-1) {
+      padding-right: 5px !important;
+      padding-left: 5px !important;
+    }
+    & :global(.col-sm-7) {
+      padding-right: 5px !important;
+      padding-left: 5px !important;
+    }
+    & :global(.col-sm-8) {
+      padding-right: 5px !important;
+      padding-left: 5px !important;
+    }
+    & :global(.col-sm-9) {
+      padding-right: 5px !important;
+      padding-left: 5px !important;
+    }
+    & :global(.col-sm-10) {
+      padding-right: 5px !important;
+      padding-left: 5px !important;
+    }
+    & :global(.col-sm-11) {
+      padding-right: 5px !important;
+      padding-left: 5px !important;
+    }
+    & :global(.panel) {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+
+
+/*& :global(.col-sm-6) {
+  padding-right: 5px !important;
+  padding-left: 5px !important;
+}
+& :global(.col-sm-5) {
+  padding-right: 5px !important;
+  padding-left: 5px !important;
+}
+& :global(.col-sm-4) {
+  padding-right: 5px !important;
+  padding-left: 5px !important;
+}
+& :global(.col-sm-3) {
+  padding-right: 5px !important;
+  padding-left: 5px !important;
+}
+& :global(.col-sm-2) {
+  padding-right: 5px !important;
+  padding-left: 5px !important;
+}
+& :global(.col-sm-1) {
+  padding-right: 5px !important;
+  padding-left: 5px !important;
+}
+& :global(.col-sm-7) {
+  padding-right: 5px !important;
+  padding-left: 5px !important;
+}
+& :global(.col-sm-8) {
+  padding-right: 5px !important;
+  padding-left: 5px !important;
+}
+& :global(.col-sm-9) {
+  padding-right: 5px !important;
+  padding-left: 5px !important;
+}
+& :global(.col-sm-10) {
+  padding-right: 5px !important;
+  padding-left: 5px !important;
+}
+& :global(.col-sm-11) {
+  padding-right: 5px !important;
+  padding-left: 5px !important;
+}*/
+
+
+
+
+
+/*& :global(.col-sm-6, .col-sm-4) {
+  padding-right: 5px;
+  padding-left: 5px;
+}*/

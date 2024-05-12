@@ -1,0 +1,49 @@
+@import '../../../../components/variables.css';
+
+.underline {
+  background: none !important;
+  background-image: none;
+  border: 1px solid #c8c7cc;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 0 0 0 0 !important;
+  color: #5b5b60;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.2;
+  padding: 5px 4px;
+  transition-duration: 0.1s;
+  box-shadow: none !important;
+  -moz-transition: border 300ms ease-out;
+  -o-transition: border 300ms ease-out;
+  -webkit-transition: border 300ms ease-out;
+  transition: border 300ms ease-out;
+  &:focus {
+    border-color: var(--brand-primary);
+  }
+}
+
+.formElements {
+  & :global(.btn) {
+    border-radius: 0;
+  }
+}
+
+
+@media (min-width: 768px) {
+  :global(.form-inline .control-label) {
+    margin-right: 5px;
+    }
+  :global(.form-inline .checkbox) {
+    margin-right: 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .formElements {
+    & :global(.form-horizontal .form-group > div) {
+      text-align: left !important;
+    }
+  }
+}

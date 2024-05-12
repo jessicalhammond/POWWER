@@ -1,0 +1,78 @@
+/**
+ * React Starter Kit (https://www.reactstarterkit.com/)
+ *
+ * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE.txt file in the root directory of this source tree.
+ */
+@import '../../components/variables.css';
+
+.signUp {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: auto;
+  background: var(--brand-primary);
+  text-align: center;
+  color: #fff;
+  padding: 3em;
+
+  & h1 {
+    font-weight: 300;
+    font-size: 36px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    & small {
+      color: rgba(255,255,255,0.7);
+    }
+  }
+
+  & :global(.form-group) {
+    padding: 8px 0;
+  }
+
+  & .formContent {
+    padding: 40px 0;
+  }
+
+  & .inputStyle {
+    background: none;
+    border: none;
+    box-shadow: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+    color: #FFF;
+    border-radius: 0;
+    height: 46px;
+    adding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    &::placeholder {
+      color: #FFF;
+    }
+    &:focus {
+      border-bottom: 2px solid #fff;
+      box-shadow: none;
+    }
+  }
+
+  & .btn {
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.8) inset;
+    background: none;
+    border-color: transparent;
+    font-weight: 400;
+    border-radius: 50px;
+    text-transform: none;
+    font-size: 18px;
+    line-height: 45px;
+    padding: 0 25px;
+    color: color(#FFF a(80%));
+    &:hover, &:focus {
+      color: #FFF;
+      box-shadow: 0 0 0 2px #FFF inset;
+      background: none;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+/**
+ * React Starter Kit (https://www.reactstarterkit.com/)
+ *
+ * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE.txt file in the root directory of this source tree.
+ */
+
+@import '../../components/variables.css';
+
+.homeStats {
+  & a {
+    color: inherit;
+  }
+}
+
+.homeChartMiddle {
+  & .chartsContainer {
+    position: relative;
+    background-color: #fff;
+    border: solid 1px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+  }
+}
+
+.topRightChart {
+  background-color: #fff;
+  border: solid 1px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  }
+  .bottomRightChart {
+    background-color: #fff;
+    border: solid 1px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .powerSupplyChart {
+    & :global(svg.recharts-surface) {
+      padding-right: 5px;
+      margin-left: -25px;
+    }
+  }

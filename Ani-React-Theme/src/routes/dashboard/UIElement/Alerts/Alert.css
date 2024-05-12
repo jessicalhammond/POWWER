@@ -1,0 +1,51 @@
+.showAlert {
+  margin-bottom: 10px;
+}
+
+
+growl-notifications {
+    position: fixed;
+    top: 60px;
+    right: 15px;
+    z-index: 1000;
+}
+
+:global(growl-notifications) {
+  & :global(growl-notification) {
+    background: rgba(0,0,0,0.6);
+    color: white;
+    padding: 15px 30px;
+    width: 250px;
+    display: block;
+    border-radius: 5px;
+    margin-top: 15px;
+    border: 1px solid rgba(0,0,0,0.8);
+    & :global(.close) {
+      color: #fff;
+      font-size: 16px;
+      margin-right: -10px;
+      margin-top: 2px;
+    }
+
+    &:global(.growl-primary) {
+      color: #FFF;
+      background: #68b7e7;
+      border: 1px solid #2698dd;
+    }
+    &:global(.growl-error) {
+      color: #FFF;
+      background: #e7908e;
+      border: 1px solid #da524f;
+    }
+    &:global(.growl-info) {
+      color: #FFF;
+      background: #85d0e7;
+      border: 1px solid #46b8da;
+    }
+    &:global(.growl-warning) {
+      color: #FFF;
+      background: #f4c37d;
+      border: 1px solid #46b8da;
+    }
+  }
+}
